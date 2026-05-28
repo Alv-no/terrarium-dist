@@ -110,17 +110,24 @@ ensure_node() {
     if [ ! -d "$HOME/.nvm" ]; then
         curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
     fi
+    # nvm.sh references variables like PROVIDED_VERSION that aren't set
+    # before being read, which trips our `set -u`. Disable nounset for the
+    # source + nvm subcommands; re-enable immediately after.
+    set +u
     # shellcheck disable=SC1090
     source "$HOME/.nvm/nvm.sh"
     nvm install --lts
     nvm use --lts
+    set -u
 }
 ensure_node
 
 # Re-source nvm so the rest of this script (and `claude` install) finds node.
 if [ -f "$HOME/.nvm/nvm.sh" ]; then
+    set +u
     # shellcheck disable=SC1090
     source "$HOME/.nvm/nvm.sh"
+    set -u
 fi
 
 # ---------------------------------------------------------------------------
