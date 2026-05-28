@@ -191,6 +191,21 @@ mv "$tmp/terrarium" "$INSTALL_PREFIX/bin/terrarium"
 chmod 0755 "$INSTALL_PREFIX/bin/terrarium"
 log "installed: $INSTALL_PREFIX/bin/terrarium"
 
+# Shadow check: if another terrarium binary exists earlier on PATH (e.g. a
+# `cargo install`-style installation under ~/.cargo/bin), our freshly
+# installed copy will be silently shadowed. The user will see the old
+# version's behavior even though "install succeeded" — which is exactly
+# the trap that consumed several debug iterations during MVP5. Warn
+# loudly and offer the remove command.
+existing="$(command -v terrarium 2>/dev/null || true)"
+if [ -n "$existing" ] && [ "$existing" != "$INSTALL_PREFIX/bin/terrarium" ]; then
+    log "WARNING: a different terrarium is earlier on PATH and will win lookups:"
+    log "         $existing"
+    log "         To use the version we just installed, remove the shadowing copy:"
+    log "         rm $existing"
+    log "         (then re-run \`which terrarium\` to confirm it resolves to $INSTALL_PREFIX/bin/terrarium)"
+fi
+
 # ---------------------------------------------------------------------------
 # 6. PATH check + next-steps
 # ---------------------------------------------------------------------------
