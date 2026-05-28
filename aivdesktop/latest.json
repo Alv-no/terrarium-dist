@@ -1,19 +1,19 @@
 {
-  "version": "0.2.2",
-  "notes": "AIvDesktop aivdesktop-v0.2.2. See https://github.com/Alv-no/terrarium-dist/releases/tag/aivdesktop-v0.2.2 for details.",
-  "pub_date": "2026-05-28T19:07:05Z",
+  "version": "0.2.3",
+  "notes": "AIvDesktop aivdesktop-v0.2.3. See https://github.com/Alv-no/terrarium-dist/releases/tag/aivdesktop-v0.2.3 for details.",
+  "pub_date": "2026-05-28T20:23:36Z",
   "platforms": {
     "darwin-x86_64": {
       "signature": "",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-0c6772a9f96971bfd106/AIvDesktop.app.tar.gz"
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-b52385fe99952ebfd333/AIvDesktop.app.tar.gz"
     },
     "darwin-aarch64": {
       "signature": "",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-0c6772a9f96971bfd106/AIvDesktop.app.tar.gz"
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-b52385fe99952ebfd333/AIvDesktop.app.tar.gz"
     },
     "linux-x86_64": {
       "signature": "",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-0c6772a9f96971bfd106/AIvDesktop_0.2.2_amd64.AppImage"
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-b52385fe99952ebfd333/AIvDesktop_0.2.3_amd64.AppImage"
     }
   }
 }
