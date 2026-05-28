@@ -1,11 +1,11 @@
 {
-  "version": "0.2.9",
-  "notes": "AIvDesktop aivdesktop-v0.2.9. See https://github.com/Alv-no/terrarium-dist/releases/tag/aivdesktop-v0.2.9 for details.",
-  "pub_date": "2026-05-28T23:06:38Z",
+  "version": "0.2.12",
+  "notes": "AIvDesktop aivdesktop-v0.2.12. See https://github.com/Alv-no/terrarium-dist/releases/tag/aivdesktop-v0.2.12 for details.",
+  "pub_date": "2026-05-28T23:37:38Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-b49cea46b6ff78a7602f/AIvDesktop_0.2.9_x64-setup.exe"
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/untagged-f8855162da558604275e/AIvDesktop_0.2.12_x64-setup.exe"
     }
   }
 }
