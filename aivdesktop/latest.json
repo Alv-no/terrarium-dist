@@ -1,23 +1,23 @@
 {
-  "version": "0.2.20",
-  "notes": "AIvDesktop aivdesktop-v0.2.20. See https://github.com/Alv-no/terrarium-dist/releases/tag/aivdesktop-v0.2.20 for details.",
-  "pub_date": "2026-05-31T23:23:16Z",
+  "version": "0.2.21",
+  "notes": "AIvDesktop aivdesktop-v0.2.21. See https://github.com/Alv-no/terrarium-dist/releases/tag/aivdesktop-v0.2.21 for details.",
+  "pub_date": "2026-06-01T00:49:45Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSkVhanJJeGlwckU3M2t3cXpBdnFROEt1NWNTS0VLSmEvS0dWVlcvU3YvNFUwYVhENHVLRzlPMFpabHIveEtRQ0MyV0hJeUhndS9sR1l3TytDSmlyMXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjY4NjMzCWZpbGU6QUl2RGVza3RvcC5hcHAudGFyLmd6CjMvek80Y1NML1ZCV25QendPS3lWRm5lQkRqeml2bG9QdmFHVUU0SzI2UDk5dDQrRjNScENFTVUwNDJQd2RqZjkzb0xmZUlxRXlnTjA1cDcvZmlPUUFBPT0K",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.20/AIvDesktop.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSlBMQjZWa0FiUkprN0NlNGFrOGxUQWFmMVFOUDZmMWEyWWhwdTh6a0NEeU90Y0J6SjFaOThOREpCUFZOYURVNHVsLzVVc2lGdkpUbEZRQW1aUSsrTUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjczNzAyCWZpbGU6QUl2RGVza3RvcC5hcHAudGFyLmd6ClVRRWlIaWgyd3VaQjhGVGVYcmpBSk9IZnh6bFNyZUc1MVpUN01ZSEVRc1Q5N1hHR0lpR2dBT2NUZFlub0pYZmd5djN3bWswTVMrcjJya2VEQUVVVkRBPT0K",
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.21/AIvDesktop.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSkVhanJJeGlwckU3M2t3cXpBdnFROEt1NWNTS0VLSmEvS0dWVlcvU3YvNFUwYVhENHVLRzlPMFpabHIveEtRQ0MyV0hJeUhndS9sR1l3TytDSmlyMXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjY4NjMzCWZpbGU6QUl2RGVza3RvcC5hcHAudGFyLmd6CjMvek80Y1NML1ZCV25QendPS3lWRm5lQkRqeml2bG9QdmFHVUU0SzI2UDk5dDQrRjNScENFTVUwNDJQd2RqZjkzb0xmZUlxRXlnTjA1cDcvZmlPUUFBPT0K",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.20/AIvDesktop.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSlBMQjZWa0FiUkprN0NlNGFrOGxUQWFmMVFOUDZmMWEyWWhwdTh6a0NEeU90Y0J6SjFaOThOREpCUFZOYURVNHVsLzVVc2lGdkpUbEZRQW1aUSsrTUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjczNzAyCWZpbGU6QUl2RGVza3RvcC5hcHAudGFyLmd6ClVRRWlIaWgyd3VaQjhGVGVYcmpBSk9IZnh6bFNyZUc1MVpUN01ZSEVRc1Q5N1hHR0lpR2dBT2NUZFlub0pYZmd5djN3bWswTVMrcjJya2VEQUVVVkRBPT0K",
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.21/AIvDesktop.app.tar.gz"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSkVvaW40UThIV241Q2lNYXJPUkxSemdMbXhoa2g0MEpNOURBVlNQbmQ4M1Znc0x6SGFXWlUvaWcxbXdsUlY2eCtBVFdQdzFlbmkvSVJLZCtxQVZqTmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjY5MTI2CWZpbGU6QUl2RGVza3RvcF8wLjIuMjBfYW1kNjQuQXBwSW1hZ2UKSE9aeDVCWDY3RmduQWxTYkxVV3BMWDBWUUVUZkt2Q2JFQk5DZGMyZGZoZW5zRVo5SU5aeUo4Wm5jVGxrNVI5cWNFUkdJNE9sSm1qRVY2akFNeEp1Q3c9PQo=",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.20/AIvDesktop_0.2.20_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSkN5VUhwT3ZKWWZNNURjajZoNTVLT1BvWjhSK3ZuTThsV0ptZUJTRng1WGVtVENNd1RITjFIQU1kWkVqUndhU1lqRTJzaXZzOUNlVXlFOXlpRWtiU1FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjc0MDQ2CWZpbGU6QUl2RGVza3RvcF8wLjIuMjFfYW1kNjQuQXBwSW1hZ2UKVVNFQ0JZeWpXbWNqbVdRcWdHNmFUeFZValUrMHhWdEROSTZ1V1lwV0FBOFVUK2Z5YWtHYUpIaDEyRC9Kek9DUUZQaE56NGVXYXJIRHp2ZXJHaU4zQWc9PQo=",
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.21/AIvDesktop_0.2.21_amd64.AppImage"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSkRIY3UxRXNTVVVLN3NvMUpFcXFGbXo2Ty83WkxUejAzYndudjJ4clN5U3BPNllscHkwZFR3Nmg1OFM3ZlkvRlg4TWwxcEpsNHY1eXEyVEVsUURtL1FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjY5NTUyCWZpbGU6QUl2RGVza3RvcF8wLjIuMjBfeDY0LXNldHVwLmV4ZQpkd2ZEbFhGNEg2bUhrVG1xbUMyTkFucFhwb0FWcktIV3U4TW40cWFEZnZ4cWwrQkw5M0F5RlBqMXErUFVOOTV4bXB2OHZXbVhsODcwTFllWGJZR0ZBQT09Cg==",
-      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.20/AIvDesktop_0.2.20_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUzFCNlI2Z2RvSkhrMThmczBLaFFPNkRwNkpKZXU3YkpjT3BSTE1ZNHZEckZvMDF0blRCVmhqUkJaQUdaK2JBK2UydzJjY1VGTFJKbmd1ZDZ0YW5TQ0Vta0FJZzhUT0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjc0NzkxCWZpbGU6QUl2RGVza3RvcF8wLjIuMjFfeDY0LXNldHVwLmV4ZQpxcFh2WGU0SUlWcmw1akUyYVhCUTEzMmlzd015R0lxRjZDREFMWVZISVRUTGZUUVdlNkY0SStzYU1HQXRiRXUvVlBYeFRRRWI4cGNFTXlqdjd4dmZDUT09Cg==",
+      "url": "https://github.com/Alv-no/terrarium-dist/releases/download/aivdesktop-v0.2.21/AIvDesktop_0.2.21_x64-setup.exe"
     }
   }
 }
