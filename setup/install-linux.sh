@@ -39,6 +39,16 @@ TERRARIUM_VERSION="${TERRARIUM_VERSION:-latest}"  # override with --terrarium-ve
 INSTALL_PREFIX="${INSTALL_PREFIX:-$HOME/.local}"
 QUIET=0
 
+# Trusted Ed25519 public key (32-byte, lowercase hex) for terrarium release
+# archives. The script you chose to run is the trust anchor: we verify the
+# downloaded binary's detached .sig against this key before installing, so a
+# swapped binary on terrarium-dist is rejected even if this script is intact.
+# Replace the sentinel below with the public hex from
+# `org_baseline::generate_keypair()` (see AIvDesktop/UPDATES.md). The all-zero
+# sentinel disables verification only in an unprovisioned build — a real
+# release must ship a real key.
+TERRARIUM_UPDATE_PUBKEY_HEX="50b2280a087f9558c0dbe4ed74391ce56e6829bba6c4291f28169828514267fb"
+
 while [ $# -gt 0 ]; do
     case "$1" in
         --terrarium-version) TERRARIUM_VERSION="$2"; shift 2;;
@@ -179,10 +189,32 @@ trap 'rm -rf "$tmp"' EXIT
 
 curl -fsSL "$url" -o "$tmp/$archive_name"
 curl -fsSL "${url}.sha256" -o "$tmp/${archive_name}.sha256"
+curl -fsSL "${url}.sig" -o "$tmp/${archive_name}.sig" \
+    || err "could not download the Ed25519 signature (.sig) — refusing to install"
 
-# Verify SHA-256.
+# Verify SHA-256 (cheap corruption check; NOT the security boundary).
 (cd "$tmp" && sha256sum -c "${archive_name}.sha256") \
     || err "SHA-256 checksum mismatch — refusing to install"
+
+# Verify the Ed25519 signature against the trusted key — the real boundary.
+# Catches a binary swapped on terrarium-dist even when this script is intact.
+# Node (>=20, installed in step 3) avoids the LibreSSL-vs-OpenSSL3 `-rawin`
+# portability problem and reproduces org_baseline::verify_sig's format.
+if [ "$TERRARIUM_UPDATE_PUBKEY_HEX" = "0000000000000000000000000000000000000000000000000000000000000000" ]; then
+    log "WARNING: no terrarium signing key embedded in this script — skipping Ed25519 verification"
+else
+    PUBHEX="$TERRARIUM_UPDATE_PUBKEY_HEX" node -e '
+      const fs = require("fs"), crypto = require("crypto");
+      const pub = Buffer.from(process.env.PUBHEX, "hex");
+      const key = crypto.createPublicKey({ key: { kty:"OKP", crv:"Ed25519",
+        x: pub.toString("base64url") }, format:"jwk" });
+      const data = fs.readFileSync(process.argv[1]);
+      const sig  = Buffer.from(fs.readFileSync(process.argv[2],"utf8").trim(), "hex");
+      process.exit(crypto.verify(null, data, key, sig) ? 0 : 1);
+    ' "$tmp/$archive_name" "$tmp/${archive_name}.sig" \
+      || err "Ed25519 signature verification failed — refusing to install"
+    log "Ed25519 signature verified"
+fi
 
 # Extract and place.
 tar -C "$tmp" -xzf "$tmp/$archive_name"
